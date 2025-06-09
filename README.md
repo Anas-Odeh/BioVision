@@ -49,7 +49,7 @@ BioVision employs a sophisticated two-stage architecture:
 ## 💾 Downloads
 
 ### Complete Software Package
-- **Google Drive**: [BioVision Complete Package](https://drive.google.com/drive/folders/1LzO3A1K51_qQuJX6fAoHclBic3wUGmHM)
+- **Google Drive**: [BioVision Complete Package](https://drive.google.com/file/d/1kTlC6Hu4ublao6blBNaps3ojpnMpw7LA/view?usp=sharing)
   - Pre-trained models for all applications
   - Complete source code
   - Example datasets
