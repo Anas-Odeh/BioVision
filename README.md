@@ -46,8 +46,73 @@ BioVision employs a sophisticated two-stage architecture:
 - Ultralytics 8.3.133
 - NVIDIA GPU (recommended: A100-SXM4-40GB for optimal performance)
 
-### Installation
-```bash
-git clone https://github.com/Anas-Odeh/BioVision.git
-cd BioVision
-pip install -r requirements.txt
+## 💾 Downloads
+
+### Complete Software Package
+- **Google Drive**: [BioVision Complete Package](https://drive.google.com/drive/folders/1LzO3A1K51_qQuJX6fAoHclBic3wUGmHM)
+  - Pre-trained models for all applications
+  - Complete source code
+  - Example datasets
+  - Documentation and tutorials
+
+### Individual Components
+- **Source Code**: Available in Google Drive package
+- **Pre-trained Models**: Included in Google Drive package
+- **Example Datasets**: Sample data for testing and validation
+
+## 🔬 Scientific Impact
+
+BioVision addresses critical challenges in biomedical image analysis by providing:
+
+- **Standardized Workflows**: Consistent analysis across different imaging modalities
+- **Clinical Translation**: Tools that bridge the gap between research and clinical practice
+- **Open Science**: Fully open-source platform promoting reproducible research
+- **Multi-Scale Analysis**: From subcellular structures to whole organisms
+
+## 📈 Validation
+
+Our comprehensive evaluation includes:
+- **Cancer Detection**: Outperforming existing methods in brain tumor classification
+- **Cross-Modal Testing**: Validated across 5+ imaging modalities
+- **Large-Scale Datasets**: Tested on thousands of images across diverse biological contexts
+- **Clinical Relevance**: Metrics optimized for real-world medical applications
+
+## 🤝 Contributing
+
+We welcome contributions from the scientific community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on:
+- Adding new applications
+- Improving existing models
+- Dataset contributions
+- Bug reports and feature requests
+
+## 📚 Citation
+
+If you use BioVision in your research, please cite:
+
+```bibtex
+@article{odeh2025biovision,
+  title={BioVision: A Versatile Deep Learning Platform Leveraging YOLOv11 and SAM 2.1 for Instance Segmentation Across Fundamental Biological Questions and Diverse Imaging Modalities},
+  author={Odeh, Anas and Salem, Rahaf and Salem, Yara and Salem, Ahmad and Shemesh, Ariel and Hasson, Peleg},
+  journal={[Journal Name]},
+  year={2025}
+}
+
+## 📞 Contact
+
+- **Corresponding Author**: Inass.odeh@campus.technion.ac.il
+- **Department**: Genetics and Developmental Biology, Technion Israel Institute of Technology
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Technion Israel Institute of Technology
+- The Rappaport Faculty of Medicine and Research Institute
+- Google Colab for computational resources
+- The open-source community for foundational tools and datasets
+
+---
+
+*BioVision: Advancing biomedical research through intelligent image analysis* 🔬✨
