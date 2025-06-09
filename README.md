@@ -85,18 +85,6 @@ We welcome contributions from the scientific community! Please see our [Contribu
 - Dataset contributions
 - Bug reports and feature requests
 
-## 📚 Citation
-
-If you use BioVision in your research, please cite:
-
-```bibtex
-@article{odeh2025biovision,
-  title={BioVision: A Versatile Deep Learning Platform Leveraging YOLOv11 and SAM 2.1 for Instance Segmentation Across Fundamental Biological Questions and Diverse Imaging Modalities},
-  author={Odeh, Anas and Salem, Rahaf and Salem, Yara and Salem, Ahmad and Shemesh, Ariel and Hasson, Peleg},
-  journal={[Journal Name]},
-  year={2025}
-}```
-
 ## 📞 Contact
 
 - **Corresponding Author**: Inass.odeh@campus.technion.ac.il
@@ -116,3 +104,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 *BioVision: Advancing biomedical research through intelligent image analysis* 🔬✨
+
+
+
+## 📚 Citation
+
+If you use BioVision in your research, please cite:
+
+```bibtex
+@article{odeh2025biovision,
+  title={BioVision: A Versatile Deep Learning Platform Leveraging YOLOv11 and SAM 2.1 for Instance Segmentation Across Fundamental Biological Questions and Diverse Imaging Modalities},
+  author={Odeh, Anas and Salem, Rahaf and Salem, Yara and Salem, Ahmad and Shemesh, Ariel and Hasson, Peleg},
+  journal={[Journal Name]},
+  year={2025}
+}
