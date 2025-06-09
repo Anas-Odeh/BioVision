@@ -56,7 +56,7 @@ BioVision employs a sophisticated two-stage architecture:
   - Documentation and tutorials
 
 ### Pre-trained Models
-- **YOLOv11 Trained Models**: [Download All YOLOv11 Models (.pt files)](https://drive.google.com/file/d/12ePAzNDusIRo2_rQtyq8oxTDDNdMjDZ0/view?usp=sharing)
+- **YOLOv11 Trained Models**: [Download All YOLOv11 Models (.pt files)](https://drive.google.com/file/d/1Mu0S7JYzwAArPMWXu2tPBpgBiTXHva0c/view?usp=sharing)
   - The complete collection of YOLOv11 trained models (.pt files) for all biological applications described in this study
   - Models for cancer detection (breast and brain)
   - Organ segmentation models (34 human + 8 mouse organs)
