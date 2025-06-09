@@ -1,4 +1,4 @@
-# BioVision: A Versatile Deep Learning Platform for Biomedical Image Segmentation
+# BioVision: universal deep learning software for medical image classification and segmentation across diverse imaging modalities in cancer detection and biomedical research
 
 **BioVision** is a cutting-edge, standalone deep learning software platform that leverages YOLOv11 object detection models and fine-tuned SAM 2.1 for high-performance instance segmentation across diverse biological applications and imaging modalities.
 
