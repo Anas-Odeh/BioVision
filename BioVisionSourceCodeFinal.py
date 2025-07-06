@@ -181,7 +181,7 @@ with CircularProgress("Importing libraries", total_steps=100):
         
         pass  # If not on Windows or DPI awareness is already set, ignore
 
-print("Imports completed.\n\nPlease wait, you're almost there...\n\nLaunching the FibroTrack application...\n\n", flush=True)
+print("Imports completed.\n\nPlease wait, you're almost there...\n\nLaunching the BioVision application...\n\n", flush=True)
 
 def print_secondary_welcome():
     
