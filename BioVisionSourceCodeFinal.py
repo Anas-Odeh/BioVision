@@ -181,7 +181,7 @@ with CircularProgress("Importing libraries", total_steps=100):
         
         pass  # If not on Windows or DPI awareness is already set, ignore
 
-print("Imports completed.\n\nPlease wait, you're almost there...\n\nLaunching the FibroTrack application...\n\n", flush=True)
+print("Imports completed.\n\nPlease wait, you're almost there...\n\nLaunching the BioVision application...\n\n", flush=True)
 
 def print_secondary_welcome():
     
@@ -329,9 +329,13 @@ class BioVisionApp(tk.Tk):
         # Set background and configure grid weights
         self.configure(bg="#f5f5f5")  # Slightly lighter background for better contrast
        
-        self.grid_columnconfigure(0, weight=1)
-        
-        self.grid_rowconfigure(0, weight=1)
+        self.grid_columnconfigure(0, weight=1) # The main window has one column (column 0) which should stretch horizontally
+
+        self.grid_rowconfigure(0, weight=0) # Row 0 (for the title) should NOT stretch vertically. It takes minimum space.
+
+        self.grid_rowconfigure(1, weight=1) # Row 1 (for the main tabs/notebook) SHOULD stretch vertically and take all available extra space.
+
+        self.grid_rowconfigure(2, weight=0) # Row 2 (for the status bar) should NOT stretch vertically. It takes minimum space.
 
         # Apply a theme
         style = ttk.Style()
@@ -477,9 +481,15 @@ class BioVisionApp(tk.Tk):
         
         # Configure proper weights for the segmentation frame
         
-        self.segmentation_frame.grid_columnconfigure(0, weight=1)
-        
-        self.segmentation_frame.grid_rowconfigure(3, weight=1)
+        self.segmentation_frame.grid_columnconfigure(0, weight=1) # The tab frame has one column (column 0) which should stretch horizontally
+
+        self.segmentation_frame.grid_rowconfigure(0, weight=0) # Row 0 (Configuration buttons) should NOT stretch.
+
+        self.segmentation_frame.grid_rowconfigure(1, weight=0) # Row 1 (Progress bar) should NOT stretch.
+
+        self.segmentation_frame.grid_rowconfigure(2, weight=1) # Row 2 (Processing Results text area) SHOULD stretch vertically. This is where the results text widget is.
+
+        self.segmentation_frame.grid_rowconfigure(3, weight=0) # Row 3 (Start Processing button) should NOT stretch.
         
         # Variables for paths
         
@@ -802,9 +812,15 @@ class BioVisionApp(tk.Tk):
         
         # Configure proper weights for the classification frame
         
-        self.classification_frame.grid_columnconfigure(0, weight=1)
-        
-        self.classification_frame.grid_rowconfigure(3, weight=1)
+        self.classification_frame.grid_columnconfigure(0, weight=1) # The tab frame has one column (column 0) which should stretch horizontally
+
+        self.classification_frame.grid_rowconfigure(0, weight=0) # Row 0 (Configuration buttons) should NOT stretch.
+
+        self.classification_frame.grid_rowconfigure(1, weight=0) # Row 1 (Progress bar) should NOT stretch.
+
+        self.classification_frame.grid_rowconfigure(2, weight=1) # Row 2 (Processing Results text area) SHOULD stretch vertically.
+
+        self.classification_frame.grid_rowconfigure(3, weight=0) # Row 3 (Start Processing button) should NOT stretch.
         
         # Variables for paths
         
