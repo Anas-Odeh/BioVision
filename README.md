@@ -41,7 +41,11 @@ BioVision employs a sophisticated two-stage architecture:
 ## 🚀 Getting Started
 
 ### Requirements
-Windows 10+
+•	Operating System: Windows 10 or 11 (64-bit)
+•	Processor: Intel Core i5 or equivalent, or higher
+•	Memory: At least 8 GB RAM (16 GB recommended)
+•	Disk Space: Minimum 500 MB available (Only for the software without models)
+
 
 ## 💾 Downloads
 
