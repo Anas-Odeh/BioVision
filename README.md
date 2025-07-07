@@ -41,28 +41,26 @@ BioVision employs a sophisticated two-stage architecture:
 ## 🚀 Getting Started
 
 ### Requirements
-- Python 3.11+
-- PyTorch 2.6.0+
-- Ultralytics 8.3.133
-- NVIDIA GPU (recommended: A100-SXM4-40GB for optimal performance)
+Windows 10+
 
 ## 💾 Downloads
 
 ### Complete Software Package
-- **Google Drive**: [BioVision Complete Package](https://drive.google.com/file/d/1kTlC6Hu4ublao6blBNaps3ojpnMpw7LA/view?usp=sharing)
+- **Google Drive**: [BioVision Complete Package](https://drive.google.com/drive/folders/1LzO3A1K51_qQuJX6fAoHclBic3wUGmHM)
   - Pre-trained models for all applications
   - Complete source code
-  - Example datasets
-  - Documentation and tutorials
+  - Documentation 
 
 ### Pre-trained Models
-- **YOLOv11 Trained Models**: [Download All YOLOv11 Models (.pt files)](https://drive.google.com/file/d/1Mu0S7JYzwAArPMWXu2tPBpgBiTXHva0c/view?usp=sharing)
+- **YOLOv11 Trained Models**: [Download All YOLOv11 Models (.pt files)](https://drive.google.com/file/d/1Mu0S7JYzwAArPMWXu2tPBpgBiTXHva0c/view?usp=drive_link)
   - The complete collection of YOLOv11 trained models (.pt files) for all biological applications described in this study
   - Models for cancer detection (breast and brain)
   - Organ segmentation models (34 human + 8 mouse organs)
   - Fetal biometry models
   - White blood cell classification models
   - Cellular structure segmentation models
+ 
+ - **SAM2.1 Models**: [Download All SAM2.1 Models (.pt files)](https://drive.google.com/file/d/1WhabPUttfBppjNcj3r2bzIwBIR_1f-_o/view?usp=drive_link)
 
 ### Individual Components
 - **Source Code**: Available in Google Drive package
@@ -109,6 +107,7 @@ This project is licensed under the CC BY-NC-SA 2.0 License - see the [LICENSE](L
 - The Rappaport Faculty of Medicine and Research Institute
 - Google Colab for computational resources
 - The open-source community for foundational tools and datasets
+- YOLOV11, SAM2.1 and Roboflow for their great efforts in developing the codes and sharing datasets.
 
 ---
 
@@ -122,7 +121,7 @@ If you use BioVision in your research, please cite:
 
 ```bibtex
 @article{odeh2025biovision,
-  title={BioVision: A Versatile Deep Learning Platform Leveraging YOLOv11 and SAM 2.1 for Instance Segmentation Across Fundamental Biological Questions and Diverse Imaging Modalities},
+  title={BioVision: universal deep learning software for medical image classification and segmentation across diverse imaging modalities in biomedicine},
   author={Odeh, Anas and Salem, Rahaf and Salem, Yara and Salem, Ahmad and Shemesh, Ariel and Hasson, Peleg},
   journal={[Journal Name]},
   year={2025}
