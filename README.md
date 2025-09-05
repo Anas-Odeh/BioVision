@@ -119,14 +119,3 @@ This project is licensed under the CC BY-NC-SA 2.0 License - see the [LICENSE](L
 
 
 
-## 📚 Citation
-
-If you use BioVision in your research, please cite:
-
-```bibtex
-@article{odeh2025biovision,
-  title={BioVision: universal deep learning software for medical image classification and segmentation across diverse imaging modalities in biomedicine},
-  author={Odeh, Anas and Salem, Rahaf and Salem, Yara and Salem, Ahmad and Shemesh, Ariel and Hasson, Peleg},
-  journal={[Journal Name]},
-  year={2025}
-}
