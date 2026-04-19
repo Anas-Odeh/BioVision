@@ -39,7 +39,7 @@ BioVision operates through a two-stage automated pipeline:
 *   **[BioVision Complete Package (Google Drive)](https://drive.google.com/drive/folders/1LzO3A1K51_qQuJX6fAoHclBic3wUGmHM)**: Includes the standalone software, source code, and comprehensive documentation.
 
 ### **Pre-trained Weights (.pt)**
-*   **[YOLOv11 Trained Models](https://drive.google.com/file/d/1Mu0S7JYzwAArPMWXu2tPBpgBiTXHva0c/view?usp=drive_link)**: Weights for the **34 human and 8 mouse organ atlas**, oncology diagnostics, and fetal biometry.
+*   **[YOLOv11 Trained Models](https://drive.google.com/file/d/1Mu0S7JYzwAArPMWXu2tPBpgBiTXHva0c/view?usp=drive_link)**: Weights for the **15 human organ atlas**, oncology diagnostics, and fetal biometry.
 *   **[SAM 2.1 Checkpoints](https://drive.google.com/file/d/1WhabPUttfBppjNcj3r2bzIwBIR_1f-_o/view?usp=drive_link)**: Optimized models for boundary delineation across all scales.
 
 ---
