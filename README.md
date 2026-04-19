@@ -46,8 +46,8 @@ BioVision operates through a two-stage automated pipeline:
 
 ## 📖 **Documentation**
 
-*   **[Guidelines for BioVision installation software.pdf]([./Guidelines%20for%20BioVision%20installation%20software.pdf](https://github.com/Anas-Odeh/BioVision/blob/main/BioVision%20User%20Manual.pdf))**: Detailed instructions for environment setup and system deployment.
-*   **[BioVision User Manual](./User_Manual.md)**: A step-by-step guide for navigating the GUI, loading models, and exporting data.
+*   **[Guidelines for BioVision installation software.pdf](./Guidelines%20for%20BioVision%20installation%20software.pdf)**: Detailed instructions for environment setup and system deployment.
+*   **[BioVision User Manual](./BioVision%20User%20Manual.pdf)**: A step-by-step guide for navigating the GUI, loading models, and exporting data.
 
 ---
 
