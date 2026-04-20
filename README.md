@@ -13,14 +13,14 @@
 
 ---
 
-## 📊 **Performance Highlights (Mean Accuracy & 95% CI)**
+[## 📊 **Performance Highlights (Mean Accuracy & 95% CI)**
 
 BioVision has been rigorously validated across multiple clinical cohorts, demonstrating high precision and statistical reliability:
 
 *   **Brain Tumor Classification (MRI)**: **99.56%** (95% CI: **99.21% – 99.92%**)
 *   **Breast Cancer Classification (X-ray)**: **97.61%** (95% CI: **95.94% – 99.28%**)
 *   **White Blood Cell (WBC) Classification**: **99.87%** (95% CI: **99.76% – 99.98%**)
-*   **Fetal Biometry (Ultrasound)**: **>99%** accuracy in structural segmentation.
+*   **Fetal Biometry (Ultrasound)**: **>99%** accuracy in structural segmentation.](https://github.com/Anas-Odeh/BioVision/commit/51de17e59e0d897a481c55df21614f5876e478a3)
 
 ---
 
@@ -34,13 +34,24 @@ BioVision operates through a two-stage automated pipeline:
 ---
 
 ## 💾 **Software & Model Downloads**
+In the interest of **Open Science** and full transparency, the raw statistical outputs used to generate the results in the manuscript are available below:
 
+*   **[BioVision_Performance_Metrics.xlsx](./BioVision_Performance_Metrics.xlsx)**: The master evaluation spreadsheet. 
+    *   **Sheet 1 (Part A)**: F1-scores, dataset sizes ($n$), and imaging modalities for all 20 targets.
+    *   **Sheet 2 (Part B)**: Granular comparative statistics against Zero-Shot VGG16 and EfficientNet-B0 architectures.
+    *   
 ### **Complete Distribution**
 *   **[BioVision Complete Package (Google Drive)](https://drive.google.com/drive/folders/1LzO3A1K51_qQuJX6fAoHclBic3wUGmHM)**: Includes the standalone software, source code, and comprehensive documentation.
 
 ### **Pre-trained Weights (.pt)**
 *   **[YOLOv11 Trained Models](https://drive.google.com/file/d/1Mu0S7JYzwAArPMWXu2tPBpgBiTXHva0c/view?usp=drive_link)**: Weights for the **15 human organ atlas**, oncology diagnostics, and fetal biometry.
 *   **[SAM 2.1 Checkpoints](https://drive.google.com/file/d/1WhabPUttfBppjNcj3r2bzIwBIR_1f-_o/view?usp=drive_link)**: Optimized models for boundary delineation across all scales.
+
+
+## ⚙️ **Technical Methodology**
+
+*   **Hybrid Architecture**: Uses a fine-tuned **YOLOv11** engine for automated region proposal, which then prompts the **SAM 2.1** transformer mask decoder for pixel-precise segmentation.
+*   **Augmentation Strategy**: All training cohorts utilized a **7-fold static augmentation pipeline** (Rotation, Mirroring, Gaussian Noise, and Brightness Scaling) to enhance model generalizability across different clinical capture settings.
 
 ---
 
