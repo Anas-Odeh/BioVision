@@ -17,7 +17,7 @@ visit https://github.com/roboflow/notebooks
 
 To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
 
-The dataset includes 543 images.
+The dataset includes 542 images.
 Colon-Transverse are annotated in YOLOv11 format.
 
 The following pre-processing was applied to each image:
