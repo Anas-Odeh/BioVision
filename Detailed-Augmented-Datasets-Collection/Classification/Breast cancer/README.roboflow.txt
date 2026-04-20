@@ -17,7 +17,7 @@ visit https://github.com/roboflow/notebooks
 
 To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
 
-The dataset includes 4969 images.
+The dataset includes 13,059 images.
 Breast2 are annotated in folder format.
 
 The following pre-processing was applied to each image:
