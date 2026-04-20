@@ -28,8 +28,7 @@ The following augmentation was applied to create 7 versions of each source image
 * 50% probability of vertical flip
 * Equal probability of one of the following 90-degree rotations: none, clockwise, counter-clockwise, upside-down
 * Random brigthness adjustment of between -25 and +25 percent
-* Random exposure adjustment of between -15 and +15 percent
-* Random Gaussian blur of between 0 and 4.9 pixels
-* Salt and pepper noise was applied to 1.96 percent of pixels
+* Random exposure adjustment of between -10 and +10 percent
+* Random Gaussian blur of between 0 and 2.5 pixels
 
 
