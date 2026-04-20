@@ -21,7 +21,14 @@ The dataset includes 4488 images.
 Tumor are annotated in YOLOv11 format.
 
 The following pre-processing was applied to each image:
+* Auto-orientation of pixel data (with EXIF-orientation stripping)
 
-No image augmentation techniques were applied.
+The following augmentation was applied to create 7 versions of each source image:
+* 50% probability of horizontal flip
+* 50% probability of vertical flip
+* Equal probability of one of the following 90-degree rotations: none, clockwise, counter-clockwise, upside-down
+* Random brigthness adjustment of between -25 and +25 percent
+* Random exposure adjustment of between -10 and +10 percent
+* Random Gaussian blur of between 0 and 2.5 pixels
 
 
