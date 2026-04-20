@@ -20,7 +20,7 @@ BioVision has been rigorously validated across multiple clinical cohorts, demons
 *   **Brain Tumor Classification (MRI)**: **99.56%** (95% CI: **99.21% – 99.92%**)
 *   **Breast Cancer Classification (X-ray)**: **97.61%** (95% CI: **95.94% – 99.28%**)
 *   **White Blood Cell (WBC) Classification**: **99.87%** (95% CI: **99.76% – 99.98%**)
-*   **Fetal Biometry (Ultrasound)**: **>99%** accuracy in structural segmentation.](https://github.com/Anas-Odeh/BioVision/commit/51de17e59e0d897a481c55df21614f5876e478a3)
+*   **Fetal Biometry (Ultrasound)**: **>99%** accuracy in structural segmentation.](https://github.com/Anas-Odeh/BioVision)
 
 ---
 
