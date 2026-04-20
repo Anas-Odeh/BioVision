@@ -7,7 +7,7 @@
 ## 🔬 **Key Features**
 
 *   **Synergistic Hybrid Architecture**: Eliminates the manual prompting bottleneck by using YOLOv11 as a "scout" for the SAM 2.1 transformer decoder.
-*   **Multi-Modal Versatility**: Validated across **Ultrasound, X-ray, MRI, and Brightfield/Electron Microscopy**.
+*   **Multi-Modal Versatility**: Validated across **Ultrasound, X-ray, MRI, and Brightfield Microscopy**.
 *   **Dual-Module GUI**: Dedicated workflows for **Instance Segmentation** and **Image Classification**.
 *   **Automated Morphometry**: Instant export of physical descriptors (Area, Eccentricity, etc.) to **Excel and CSV**.
 
