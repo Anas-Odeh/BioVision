@@ -1,6 +1,6 @@
 # BioVision: A Fully Automated, Cross-Modal YOLOv11 and SAM 2.1 Framework for Biomedical Instance Segmentation and Classification
 
-**BioVision** is a cutting-edge, standalone diagnostic platform that bridges the gap between foundational AI and clinical research. By leveraging a synergistic hybrid architecture—integrating **YOLOv11** for automated region proposal and **SAM 2.1** for pixel-precise segmentation—BioVision provides a zero-manual-prompt solution for high-throughput biomedical image analysis.
+**BioVision** is a cutting-edge, standalone diagnostic platform that bridges the gap between foundational AI and clinical research. By leveraging a synergistic hybrid architecture - integrating **YOLOv11** for automated region proposal and **SAM 2.1** for pixel-precise segmentation—BioVision provides a zero-manual-prompt solution for high-throughput biomedical image analysis.
 
 ---
 
