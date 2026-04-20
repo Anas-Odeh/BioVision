@@ -1,121 +1,72 @@
-# BioVision: Universal, Cross-Modal Deep Learning for Biomedical Image Analysis
+# BioVision: A Fully Automated, Cross-Modal YOLOv11 and SAM 2.1 Framework for Biomedical Instance Segmentation and Classification
 
-**BioVision** is a cutting-edge, standalone deep learning software platform that leverages YOLOv11 object detection models and fine-tuned SAM 2.1 for high-performance instance segmentation across diverse biological applications and imaging modalities.
-
-## 🔬 Key Features
-
-- **Multi-Modal Support**: Works across ultrasound, X-ray, MRI, electron microscopy, and brightfield microscopy
-- **Cancer Diagnostics**: Accurate classification and segmentation of breast cancer (X-ray mammography) and brain tumors (MRI)
-- **Comprehensive Organ Segmentation**: Supports 34 human organs and 8 mouse tissues from histology datasets
-- **Fetal Biometry**: Precise fetal structure segmentation in ultrasound images for developmental assessment
-- **Cellular Analysis**: White blood cell classification and subcellular structure segmentation (mitochondria)
-- **User-Friendly Interface**: Intuitive GUI with both segmentation and classification workflows
-
-## 🎯 Applications
-
-### Medical Diagnostics
-- **Breast Cancer Detection**: 88.5% classification accuracy, 100% segmentation accuracy
-- **Brain Tumor Analysis**: 99.5% classification accuracy, 97.5% segmentation accuracy
-- **Fetal Development**: 99% accuracy in fetal structure segmentation
-
-### Research Applications
-- **Histopathology**: Automated tissue identification across diverse organ systems
-- **Hematology**: 99.4% accuracy in white blood cell classification
-- **Cellular Biology**: Precise mitochondria segmentation in EM images
-- **Comparative Biology**: Cross-species anatomical mapping
-
-## 🏗️ Architecture
-
-BioVision employs a sophisticated two-stage architecture:
-
-1. **Stage 1**: Custom-trained YOLOv11 models for robust object detection and region proposal
-2. **Stage 2**: Fine-tuned SAM 2.1 models for precise boundary delineation and instance segmentation
-
-## 📊 Performance Highlights
-
-- **High Accuracy**: >88.5% across all applications
-- **Fast Processing**: 4.8-11.9ms per image (depending on modality and resolution)
-- **Cross-Modal Robustness**: Consistent performance across different imaging techniques
-- **Clinical Precision**: Minimal false negatives in cancer detection (0% for breast cancer)
-
-## 🚀 Getting Started
-
-### Requirements
-•	Operating System: Windows 10 or 11 (64-bit)
-•	Processor: Intel Core i5 or equivalent, or higher
-•	Memory: At least 8 GB RAM (16 GB recommended)
-•	Disk Space: Minimum 500 MB available (Only for the software without models)
-
-
-## 💾 Downloads
-
-### Complete Software Package
-- **Google Drive**: [BioVision Complete Package](https://drive.google.com/drive/folders/1LzO3A1K51_qQuJX6fAoHclBic3wUGmHM)
-  - Pre-trained models for all applications
-  - Complete source code
-  - Documentation 
-
-### Pre-trained Models
-- **YOLOv11 Trained Models**: [Download All YOLOv11 Models (.pt files)](https://drive.google.com/file/d/1Mu0S7JYzwAArPMWXu2tPBpgBiTXHva0c/view?usp=drive_link)
-  - The complete collection of YOLOv11 trained models (.pt files) for all biological applications described in this study
-  - Models for cancer detection (breast and brain)
-  - Organ segmentation models (34 human + 8 mouse organs)
-  - Fetal biometry models
-  - White blood cell classification models
-  - Cellular structure segmentation models
- 
- - **SAM2.1 Models**: [Download All SAM2.1 Models (.pt files)](https://drive.google.com/file/d/1WhabPUttfBppjNcj3r2bzIwBIR_1f-_o/view?usp=drive_link)
-
-### Individual Components
-- **Source Code**: Available in Google Drive package
-- **Pre-trained Models**: Included in Google Drive package
-- **Example Datasets**: Sample data for testing and validation
-
-## 🔬 Scientific Impact
-
-BioVision addresses critical challenges in biomedical image analysis by providing:
-
-- **Standardized Workflows**: Consistent analysis across different imaging modalities
-- **Clinical Translation**: Tools that bridge the gap between research and clinical practice
-- **Open Science**: Fully open-source platform promoting reproducible research
-- **Multi-Scale Analysis**: From subcellular structures to whole organisms
-
-## 📈 Validation
-
-Our comprehensive evaluation includes:
-- **Cancer Detection**: Outperforming existing methods in brain tumor classification
-- **Cross-Modal Testing**: Validated across 5+ imaging modalities
-- **Large-Scale Datasets**: Tested on thousands of images across diverse biological contexts
-- **Clinical Relevance**: Metrics optimized for real-world medical applications
-
-## 🤝 Contributing
-
-We welcome contributions from the scientific community! 
-- Adding new applications
-- Improving existing models
-- Dataset contributions
-- Bug reports and feature requests
-
-## 📞 Contact
-
-- **Corresponding Author**: Inass.odeh@campus.technion.ac.il
-- **Department**: Genetics and Developmental Biology, Technion Israel Institute of Technology
-
-## 📄 License
-
-This project is licensed under the CC BY-NC-SA 2.0 License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Technion Israel Institute of Technology
-- The Rappaport Faculty of Medicine and Research Institute
-- Google Colab for computational resources
-- The open-source community for foundational tools and datasets
-- YOLOV11, SAM2.1 and Roboflow for their great efforts in developing the codes and sharing datasets.
+**BioVision** is a cutting-edge, standalone diagnostic platform that bridges the gap between foundational AI and clinical research. By leveraging a synergistic hybrid architecture—integrating **YOLOv11** for automated region proposal and **SAM 2.1** for pixel-precise segmentation—BioVision provides a zero-manual-prompt solution for high-throughput biomedical image analysis.
 
 ---
 
-*BioVision: Advancing biomedical research through intelligent image analysis* 🔬✨
+## 🔬 **Key Features**
 
+*   **Synergistic Hybrid Architecture**: Eliminates the manual prompting bottleneck by using YOLOv11 as a "scout" for the SAM 2.1 transformer decoder.
+*   **Multi-Modal Versatility**: Validated across **Ultrasound, X-ray, MRI, and Brightfield/Electron Microscopy**.
+*   **Dual-Module GUI**: Dedicated workflows for **Instance Segmentation** and **Image Classification**.
+*   **Automated Morphometry**: Instant export of physical descriptors (Area, Eccentricity, etc.) to **Excel and CSV**.
 
+---
 
+## 📊 **Performance Highlights (Mean Accuracy & 95% CI)**
+
+BioVision has been rigorously validated across multiple clinical cohorts, demonstrating high precision and statistical reliability:
+
+*   **Brain Tumor Classification (MRI)**: **99.56%** (95% CI: **99.21% – 99.92%**)
+*   **Breast Cancer Classification (X-ray)**: **97.61%** (95% CI: **95.94% – 99.28%**)
+*   **White Blood Cell (WBC) Classification**: **99.87%** (95% CI: **99.76% – 99.98%**)
+*   **Fetal Biometry (Ultrasound)**: **>99%** accuracy in structural segmentation.
+
+---
+
+## 🏗️ **Technical Architecture**
+
+BioVision operates through a two-stage automated pipeline:
+
+1.  **Stage 1 (Detection)**: A fine-tuned **YOLOv11** engine identifies biological targets and generates automated bounding-box prompts.
+2.  **Stage 2 (Segmentation)**: Bounding boxes are passed to the **SAM 2.1** mask decoder, confining the transformer’s attention to specific Regions of Interest (ROIs) for rapid, pixel-precise boundary definition.
+
+---
+
+## 💾 **Software & Model Downloads**
+
+### **Complete Distribution**
+*   **[BioVision Complete Package (Google Drive)](https://drive.google.com/drive/folders/1LzO3A1K51_qQuJX6fAoHclBic3wUGmHM)**: Includes the standalone software, source code, and comprehensive documentation.
+
+### **Pre-trained Weights (.pt)**
+*   **[YOLOv11 Trained Models](https://drive.google.com/file/d/1Mu0S7JYzwAArPMWXu2tPBpgBiTXHva0c/view?usp=drive_link)**: Weights for the **15 human organ atlas**, oncology diagnostics, and fetal biometry.
+*   **[SAM 2.1 Checkpoints](https://drive.google.com/file/d/1WhabPUttfBppjNcj3r2bzIwBIR_1f-_o/view?usp=drive_link)**: Optimized models for boundary delineation across all scales.
+
+---
+
+## 📖 **Documentation**
+
+*   **[Guidelines for BioVision installation software.pdf](./Guidelines%20for%20BioVision%20installation%20software.pdf)**: Detailed instructions for environment setup and system deployment.
+*   **[BioVision User Manual](./BioVision%20User%20Manual.pdf)**: A step-by-step guide for navigating the GUI, loading models, and exporting data.
+
+---
+
+## 📈 **Validation & Open Science**
+
+BioVision is built on the principles of **Open Science**. Our validation strategy utilizes patient-level and slide-level data isolation to prevent leakage and ensure true clinical generalizability.
+
+*   **Codebase**: Fully open-source and modular.
+*   **Reproducibility**: Pre-trained weights and example datasets are provided to allow for immediate verification of manuscript results.
+
+---
+
+## 📞 **Contact & Affiliations**
+
+*   **Corresponding Author**: **Inass.odeh@campus.technion.ac.il**
+*   **Institution**: **Technion – Israel Institute of Technology**
+*   **Department**: Genetics and Developmental Biology, Rappaport Faculty of Medicine.
+
+---
+
+### 🙏 **Acknowledgments**
+Special thanks to the developers of **YOLOv11**, **SAM 2.1**, and the **Roboflow** and **GTEx** communities for providing the foundational datasets and architectures that made this research possible.
