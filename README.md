@@ -1,83 +1,65 @@
-# BioVision: A Fully Automated, Cross-Modal YOLOv11 and SAM 2.1 Framework for Biomedical Instance Segmentation and Classification
+# BioVision: Universal, Cross-Modal Deep Learning for Biomedical Image Analysis
 
-**BioVision** is a cutting-edge, standalone diagnostic platform that bridges the gap between foundational AI and clinical research. By leveraging a synergistic hybrid architecture - integrating **YOLOv11** for automated region proposal and **SAM 2.1** for pixel-precise segmentation—BioVision provides a zero-manual-prompt solution for high-throughput biomedical image analysis.
+![Institution: Technion](https://img.shields.io/badge/Institution-Technion-red.svg)
+![Field: Biomedical AI](https://img.shields.io/badge/Field-Biomedical%20AI-green.svg)
+
+**BioVision** is an **integrated** software platform for automated **instance segmentation** and **classification** across diverse imaging modalities[cite: 1]. By utilizing **YOLOv11** as an automated prompt generator for the **SAM 2.1** foundational architecture, the platform provides a solution for high-throughput biomedical image analysis without the need for manual spatial prompting[cite: 1].
+
+---
+
+## 📑 **Abstract**
+
+Accurate instance segmentation is fundamental to clinical diagnostics across diverse imaging modalities[cite: 1]. While foundation models like the **Segment Anything Model 2.1 (SAM 2.1)** offer delineation, their reliance on manual spatial prompting can limit automated workflows[cite: 1]. We introduce **BioVision**, an integrated deep learning platform combining task-specific, fine-tuned **You Only Look Once version 11 (YOLOv11)** region-proposal models with the foundational SAM 2.1 architecture[cite: 1]. 
+
+**The platform was evaluated across a spectrum of biological scales and imaging modalities, ranging from low-magnification fetal analysis and clinical tumor identification to high-resolution cellular segmentation[cite: 1].** 
 
 ---
 
 ## 🔬 **Key Features**
 
-*   **Synergistic Hybrid Architecture**: Eliminates the manual prompting bottleneck by using YOLOv11 as a "scout" for the SAM 2.1 transformer decoder.
-*   **Multi-Modal Versatility**: Validated across **Ultrasound, X-ray, MRI, and Brightfield Microscopy**.
-*   **Dual-Module GUI**: Dedicated workflows for **Instance Segmentation** and **Image Classification**.
-*   **Automated Morphometry**: Instant export of physical descriptors (Area, Eccentricity, etc.) to **Excel and CSV**.
+*   **Integrated Architecture**: Combines **YOLOv11** (localization) and **SAM 2.1** (segmentation) into a single, automated pipeline[cite: 1].
+*   **Multi-Modal Utility**: Validated for **MRI, X-ray, Ultrasound, and Brightfield Microscopy**[cite: 1].
+*   **Automated Morphometry**: Instant export of physical descriptors (Area, Eccentricity, Centroids, etc.) to structured **Excel** and **CSV** reports[cite: 1].
+*   **Standalone Software**: Features a dedicated **Graphical User Interface (GUI)** designed for researchers without specialized computational expertise[cite: 1].
 
 ---
 
-[## 📊 **Performance Highlights (Mean Accuracy & 95% CI)**
+## 📊 **Performance Benchmarks**
 
-BioVision has been rigorously validated across multiple clinical cohorts, demonstrating high precision and statistical reliability:
+BioVision reached high accuracy levels across 20 biological targets, showing performance gains compared to zero-shot **VGG16**, **EfficientNet-B0**, and standalone **SAM 2.1** ($p < 0.05$)[cite: 1].
 
-*   **Brain Tumor Classification (MRI)**: **99.56%** (95% CI: **99.21% – 99.92%**)
-*   **Breast Cancer Classification (X-ray)**: **97.61%** (95% CI: **95.94% – 99.28%**)
-*   **White Blood Cell (WBC) Classification**: **99.87%** (95% CI: **99.76% – 99.98%**)
-*   **Fetal Biometry (Ultrasound)**: **>99%** accuracy in structural segmentation.
+| Application Area | Mean Confidence | 95% Confidence Interval (CI) |
+| :--- | :--- | :--- |
+| **Brain Tumor (MRI)** | **99.56%** | [99.21%, 99.92%][cite: 1] |
+| **Breast Cancer (X-ray)** | **97.61%** | [95.94%, 99.28%][cite: 1] |
+| **White Blood Cells (WBC)** | **99.87%** | [99.76%, 99.98%][cite: 1] |
+| **Multi-Organ Histology** | **94.79%** | [93.51%, 96.08%][cite: 1] |
 
----
-
-## 🏗️ **Technical Architecture**
-
-BioVision operates through a two-stage automated pipeline:
-
-1.  **Stage 1 (Detection)**: A fine-tuned **YOLOv11** engine identifies biological targets and generates automated bounding-box prompts.
-2.  **Stage 2 (Segmentation)**: Bounding boxes are passed to the **SAM 2.1** mask decoder, confining the transformer’s attention to specific Regions of Interest (ROIs) for rapid, pixel-precise boundary definition.
+> **Note**: For full metrics across all 20 biological targets, refer to the **BioVision_Performance_Metrics.xlsx** file in this repository[cite: 1].
 
 ---
 
-## 💾 **Software & Model Downloads**
-In the interest of **Open Science** and full transparency, the raw statistical outputs used to generate the results in the manuscript are available below:
+## 🏗️ **Technical Workflow**
 
-*   **[BioVision_Performance_Metrics.xlsx](./BioVision_Performance_Metrics.xlsx)**: The master evaluation spreadsheet. 
-    *   **Sheet 1 (Part A)**: F1-scores, dataset sizes ($n$), and imaging modalities for all 20 targets.
-    *   **Sheet 2 (Part B)**: Granular comparative statistics against Zero-Shot VGG16 and EfficientNet-B0 architectures.
-    *   
-### **Complete Distribution**
-*   **[BioVision Complete Package (Google Drive)](https://drive.google.com/drive/folders/1LzO3A1K51_qQuJX6fAoHclBic3wUGmHM)**: Includes the standalone software, source code, and comprehensive documentation.
-
-### **Pre-trained Weights (.pt)**
-*   **[YOLOv11 Trained Models](https://drive.google.com/file/d/1Mu0S7JYzwAArPMWXu2tPBpgBiTXHva0c/view?usp=drive_link)**: Weights for the **15 human organ atlas**, oncology diagnostics, and fetal biometry.
-*   **[SAM 2.1 Checkpoints](https://drive.google.com/file/d/1WhabPUttfBppjNcj3r2bzIwBIR_1f-_o/view?usp=drive_link)**: Optimized models for boundary delineation across all scales.
-
-
-## ⚙️ **Technical Methodology**
-
-*   **Hybrid Architecture**: Uses a fine-tuned **YOLOv11** engine for automated region proposal, which then prompts the **SAM 2.1** transformer mask decoder for pixel-precise segmentation.
-*   **Augmentation Strategy**: All training cohorts utilized a **7-fold static augmentation pipeline** (Rotation, Mirroring, Gaussian Noise, and Brightness Scaling) to enhance model generalizability across different clinical capture settings.
+The platform operates through a sequential automated pipeline:
+1.  **Detection Phase**: A fine-tuned **YOLOv11** engine identifies biological targets and generates automated bounding-box prompts[cite: 1].
+2.  **Segmentation Phase**: These coordinates are passed to the **SAM 2.1** mask decoder, confining the transformer’s attention to specific **Regions of Interest (ROIs)** for automated boundary definition[cite: 1].
 
 ---
 
-## 📖 **Documentation**
+## 💾 **Resources & Downloads**
 
-*   **[Guidelines for BioVision installation software.pdf](./Guidelines%20for%20BioVision%20installation%20software.pdf)**: Detailed instructions for environment setup and system deployment.
-*   **[BioVision User Manual](./BioVision%20User%20Manual.pdf)**: A step-by-step guide for navigating the GUI, loading models, and exporting data.
-
----
-
-## 📈 **Validation & Open Science**
-
-BioVision is built on the principles of **Open Science**. Our validation strategy utilizes patient-level and slide-level data isolation to prevent leakage and ensure true clinical generalizability.
-
-*   **Codebase**: Fully open-source and modular.
-*   **Reproducibility**: Pre-trained weights and example datasets are provided to allow for immediate verification of manuscript results.
+*   📦 **[Standalone Software Package](https://drive.google.com/drive/folders/1LzO3A1K51_qQuJX6fAoHclBic3wUGmHM)**: Download the installation-ready BioVision engine[cite: 1].
+*   🧠 **[Pre-trained Weights (.pt)](https://drive.google.com/file/d/1ueTQ-KnkjQ4mg3a9LpGoMV6_QxsG6mkf/view)**: Optimized models for clinical and histological analysis[cite: 1].
+*   📖 **[BioVision User Manual](./BioVision%20User%20Manual.pdf)**: Documentation for system deployment and interface navigation[cite: 1].
 
 ---
 
 ## 📞 **Contact & Affiliations**
 
-*   **Corresponding Author**: **Inass.odeh@campus.technion.ac.il**
-*   **Institution**: **Technion – Israel Institute of Technology**
-*   **Department**: Genetics and Developmental Biology, Rappaport Faculty of Medicine.
+*   **Author**: **Anas Mahmood Odeh** (Inass.odeh@campus.technion.ac.il)[cite: 1]
+*   **Principal Investigator**: **Peleg Hasson** (phasson@technion.ac.il)[cite: 1]
+*   **Institution**: **Technion – Israel Institute of Technology**, Rappaport Faculty of Medicine[cite: 1]
 
----
-
-### 🙏 **Acknowledgments**
-Special thanks to the developers of **YOLOv11**, **SAM 2.1**, and the **Roboflow** and **GTEx** communities for providing the foundational datasets and architectures that made this research possible.
+### **Acknowledgments**
+We acknowledge the developers of **YOLOv11** and **SAM 2.1**, and the **GTEx** and **Roboflow** communities for providing the foundational datasets and architectures that supported this research[cite: 1].
