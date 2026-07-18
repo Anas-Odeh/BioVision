@@ -1,4 +1,4 @@
-# BioVision: Universal, Cross-Modal Deep Learning for Biomedical Image Analysis
+# BioVision: ACross-Modal Deep Learning for Biomedical Image Analysis
 
 ![Institution: Technion](https://img.shields.io/badge/Institution-Technion-red.svg)
 ![Field: Biomedical AI](https://img.shields.io/badge/Field-Biomedical%20AI-green.svg)
