@@ -24,14 +24,15 @@ Accurate instance segmentation is fundamental to clinical diagnostics across div
 
 ---
 
-## 📊 **Performance Benchmarks**
+## 📊 Performance Benchmarks
 
-BioVision reached high accuracy levels across 20 biological targets, showing performance gains compared to **MedSAM** and standalone **SAM 2.1** ($p < 0.05$).
+BioVision achieved high accuracy across **20 biological targets**, demonstrating statistically significant performance improvements compared with **MedSAM** and standalone **SAM 2.1** (*p* < 0.05).
 
-| Application Area | | 95% Confidence Interval (CI) |
-| **Brain Tumor (MRI)**  [92.62%, 96.64%] |
-| **Breast Cancer (X-ray)**  [91.55%, 97.09%]] |
-| **White Blood Cells (WBC)**  [93.17%, 96.36%] |
+| Application Area | Imaging Modality | 95% Confidence Interval (CI) |
+| :--- | :---: | :---: |
+| 🧠 **Brain Tumor** | MRI | **92.62%–96.64%** |
+| 🎗️ **Breast Cancer** | X-ray | **91.55%–97.09%** |
+| 🩸 **White Blood Cells (WBC)** | Microscopy | **93.17%–96.36%** |
 
 
 > **Note**: For full metrics across all 20 biological targets, refer to the **BioVision_Performance_Metrics.xlsx** file in this repository.
