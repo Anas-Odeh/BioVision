@@ -26,7 +26,7 @@ Accurate instance segmentation is fundamental to clinical diagnostics across div
 
 ## 📊 **Performance Benchmarks**
 
-BioVision reached high accuracy levels across 20 biological targets, showing performance gains compared to MedSAM and standalone **SAM 2.1** ($p < 0.05$).
+BioVision reached high accuracy levels across 20 biological targets, showing performance gains compared to **MedSAM** and standalone **SAM 2.1** ($p < 0.05$).
 
 | Application Area | Mean Confidence | 95% Confidence Interval (CI) |
 | :--- | :--- | :--- |
