@@ -30,10 +30,10 @@ BioVision reached high accuracy levels across 20 biological targets, showing per
 
 | Application Area | Mean Confidence | 95% Confidence Interval (CI) |
 | :--- | :--- | :--- |
-| **Brain Tumor (MRI)** | **99.56%** | [99.21%, 99.92%] |
-| **Breast Cancer (X-ray)** | **97.61%** | [95.94%, 99.28%] |
-| **White Blood Cells (WBC)** | **99.87%** | [99.76%, 99.98%] |
-| **Multi-Organ Histology** | **94.79%** | [93.51%, 96.08%] |
+| **Brain Tumor (MRI)** | **99.56%** | [92.62%, 96.64%] |
+| **Breast Cancer (X-ray)** | **97.61%** | [91.55%, 97.09%]] |
+| **White Blood Cells (WBC)** | **99.87%** | [93.17%, 96.36%] |
+
 
 > **Note**: For full metrics across all 20 biological targets, refer to the **BioVision_Performance_Metrics.xlsx** file in this repository.
 
