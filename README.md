@@ -57,8 +57,7 @@ The platform operates through a sequential automated pipeline:
 
 ## 📞 **Contact & Affiliations**
 
-*   **Author**: **Anas Odeh** (Inass.odeh@campus.technion.ac.il)
-*   **Principal Investigator**: **Peleg Hasson** (phasson@technion.ac.il)
+*   **First and corresponding Author**: **Anas Odeh** (Inass.odeh@campus.technion.ac.il\ Anas.odeh797@gmail.com)
 *   **Institution**: **Technion – Israel Institute of Technology**, Rappaport Faculty of Medicine
 
 ### **Acknowledgments**
